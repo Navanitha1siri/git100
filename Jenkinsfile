@@ -11,7 +11,7 @@ node('built-in')
     }
     stage('Cont Depl-Master')
     {
-        cicd.newDeploy("shareLibrary","172.31.16.164","textapp")
+        cicd.newDeploy("shareLibrary","172.31.21.34","textapp")
     }
     stage('Cont Test-Master')
     {
@@ -20,6 +20,6 @@ node('built-in')
     }
     stage('Cont Deliv-Master')
     {
-        cicd.newDeploy("shareLibrary","172.31.27.230","prodapp")
+        cicd.newDeploy("shareLibrary","172.31.25.234","prodapp")
     }
 }
